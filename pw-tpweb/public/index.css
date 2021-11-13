@@ -9,7 +9,6 @@
 body {
     background-color: #24252A;
 }
-
 li, a, button {
     font-family:"Montserrat", sans-serif;
     font-weight: 500;
@@ -27,6 +26,8 @@ header {
 
 .logo {
     cursor: pointer;
+    border-radius: 30px;
+    width: 120px;
 }
 
 .nav__links {
@@ -63,14 +64,117 @@ button:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
 
-@media only screen and (max-width: 800px) {
-    .nav__links, .cta {
-        display: none;
-    }
-    .menu {
-        display: inherit;
-    }
+/* aca esta el error*/
+.images a,{   
+    padding: 10px;
+    font-size: 15px;
+    color: crimson;
 }
+
+.bloqueuno {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.bloquetres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.bloqueuno p {
+    font-size: 16px;
+    color: white;
+    padding: 15px;
+}
+
+.somos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.somos p{
+    font-size: 16px;
+    color: white;
+}
+.somos img {
+    width: 220px;
+    border-radius: 150px;
+    padding: 20px;
+}
+
+/* .bloquedos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 50px;
+    width: 300px;
+    padding: 20px;
+}
+
+.bloquedos img, p {
+    border-radius: 50px;
+    width: 300px;
+    font-size: 16px;
+    color: white;
+    padding: 5px;
+} */
+
+#contenido {max-width: 1368px;margin:0 auto;}
+
+.bloqueuno img {
+    width: 350px;
+    padding: 20px;
+    border-radius: 150px;
+}
+
+.images {
+    border-radius: 50px;
+    padding: 10px;
+    width: 300px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    gap: 10px;
+    justify-content: left;
+}
+
+.container p{
+    font-size: 16px;
+    color:white;
+}
+
+.organizacion {
+    font-size: 16px;
+    box-sizing: bor;
+    padding: 50px;
+    color: beige;
+    text-align: left;
+    display:inline-flex;
+    flex-wrap: initial;
+    gap: 60px;
+}
+
+.organizacion img{
+    border-radius: 30px;
+    width: 120px;
+}
+
+
 
 /* mobile nav */
 
@@ -96,29 +200,57 @@ button:hover {
 
 .overlay a {
     padding: 15px;
-    font-size: 36px;
+    font-size: 20px;
     display: block;
     transition:all 0.3s ease 0s ;
 }
 
 .overlay a:hover, .overlay a:focus {
     color: #0088a9;
-} 
+}
 
 .overlay .close {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
 }
 
-@media screen and (max-heigth: 450px) {
+.nav__links, .cta {
+    display: none;
+}
+.menu {
+    display: inherit;
+}
+
+
+
+@media (min-width: 576px) {
     .overlay a {
-        font-size: 20px;
+        font-size: 36px;
+    } 
+    .overlay .close{
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
     }
-    .overlay .close {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
+    .somos {
+        flex-direction:row;
+    }
+
+
+}
+
+@media (min-width: 768px) { 
+    .nav__links,.cta {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .bloqueuno {
+        flex-direction: row;
     }
 }
+
+@media (min-width: 1200px) { }

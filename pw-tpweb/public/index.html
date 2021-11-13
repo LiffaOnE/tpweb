@@ -1,40 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>practicando</title>
-      <link rel="stylesheet" href="index.css">
-      
-</head>
-<body>
-      <header>
-          <img class="logo" src="" alt="logo">
-          <nav>
-              <ul class="nav__links">
-                  <li><a href="#">Servicios</a></li>
-                  <li><a href="#">Proyectos</a></li>
-                  <li><a href="#">Acerca de</a></li>
-              </ul>
-          </nav>
-          <a class="cta" href="#"><button>Contacto</button></a>
-          <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
-      </header>
-      <div id="mobile__menu" class="overlay">
-          <a class="close" onclick="closeNav()">&times;</a>
-          <div class="overlay__content">
-              <a href="#">Servicios</a>
-              <a href="#">Proyectos</a>
-              <a href="#">Acerca de</a>
-          </div>
-      </div>
-      <script type="text"></script>
-</body>
-</html>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>market place</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="plugins/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/owlcarousel/owl.theme.feli.css">   
+    <link rel="stylesheet" href="index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <body>
+        <div id="contenido">
+            <header>
+                <img class="logo" src="images/logo1.jpg" alt="logo">
+                <nav>
+                    <ul class="nav__links">
+                      <!--   <span><i class="fa-solid fa-bars"></i>menu</span>--> 
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">¿Quienes somos?</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+                <a class="cta" href="#"><button>Contacto</button></a>
+                <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+            </header>
+                <div id="mobile__menu" class="overlay">
+                <a class="close" onclick="closeNav()">&times;</a>
+                <div class="overlay__content">
+                    <a href="#">Servicios</a>
+                    <a href="#">¿Quienes somos?</a>
+                    <a href="#">Contacto</a>
+                </div>
+        </div>
+        <div class="bloqueuno">
+                <img src="images/profesionales.jpg" alt="">
+                <p>!Indica que tipo de profesional eres!</p>
+                <p>aca va la info de la pagina que tenemos que poner toda la informacion pero esto lo vamos a poner cuando nos veamos mas que seguro Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequuntur sunt quam iure dolorum id quibusdam voluptates omnis. Laboriosam molestiae veniam in sed corrupti magnam enim sit voluptatibus laudantium voluptatum.</p>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <img src="images/programacion.jpg" alt="">
+            <img src="images/servicios contables.jpg" alt="">
+            <img src="images/ingles.jpg" alt="">
+        </div>
+        <div class="bloquetres">
+            <p>programacion</p>
+            <p>Servicios contables</p>
+            <p>ingles</p>
+        </div>
+        <div class="somos">
+            <img src="/images/logocris.jpg" alt="">
+            <p>Hola nos presentamos somos cristian y felipe Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deleniti sit recusandae corrupti nam et libero tempora incidunt velit. Nemo sint ullam porro doloribus necessitatibus deleniti eos, dolores consequuntur suscipit.</p>
+            <img src="images/logofeli.jpg" alt="">
+        </div>
+
+    </body>
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
+    <script src="app.js"></script>
+    </html>
